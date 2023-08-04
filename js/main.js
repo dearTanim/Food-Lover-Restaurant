@@ -67,10 +67,18 @@
 	});
 
 
-	$('.sidebar-menu nav ul li').on('click', function(){
-        $('.sidebar-menu nav ul li ul').hide();
-		$(this).children('ul').slideToggle();
-	});
+    $('.sidebar-menu ul li a').on('click', function(){
+
+        $('.sidebar-menu ul li ul').slideUp();
+        $(this).siblings('ul').slideDown();
+        $('.blank-li').hide();
+        $(this).parent('li').children('.blank-li').show();
+    });
+
+    $('.blank-li').on('click', function(){
+        $('.sidebar-menu ul li ul').slideUp();
+        $(this).hide();
+    })
 
     $('#sidebar-btn-2').on( 'click', function(){
         $('.sidebar-menu-2').show();
@@ -86,10 +94,17 @@
         });
     })
 
-    $('.sidebar-menu-2 nav ul li').on('click', function(){
-        $('.sidebar-menu-2 nav ul li ul').hide();
-		$(this).children('ul').slideToggle();
-	})
+    $('.sidebar-menu-2 ul li a').on('click', function(){
+        $('.sidebar-menu-2 ul li ul').slideUp();
+        $(this).siblings('ul').slideDown();
+        $('.blank-li').hide();
+        $(this).parent('li').children('.blank-li').show();
+    });
+
+    $('.blank-li').on('click', function(){
+        $('.sidebar-menu-2 ul li ul').slideUp();
+        $(this).hide();
+    })
 
 
     // wow js
