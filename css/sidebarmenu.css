@@ -46,6 +46,16 @@
 .sidebar-menu ul li ul li:hover{
     background: #636e72;
 }
+.sidebar-menu ul li span.blank-li{
+    width: 100%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: none;
+}
 .info{
     position: relative;
 }
@@ -98,4 +108,14 @@
 }
 .sidebar-menu-2 ul li ul li:hover{
     background: #636e72;
+}
+.sidebar-menu-2 ul li span.blank-li{
+    width: 100%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: none;
 }
