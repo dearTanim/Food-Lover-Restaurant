@@ -89,6 +89,7 @@
     });
 
     $('.sidebar-close-2').on( 'click', function(){
+	 $('.sidebar-menu-2').hide();
         $('.sidebar-menu-2').animate({
             right:-200
         });
